@@ -1,45 +1,36 @@
 'use strict'
 
 const http = require('http')
-
-const sendJSON = (json, res) => {
-  res.writeHead(200, { 'content-type': 'application/json' })
-  res.end(JSON.stringify(json))
-}
-
-const sendBadRequest = (res) => {
-  res.writeHead(400, { 'content-type': 'text/plain' })
-  res.end('Bad request')
-}
+const url = require('url')
 
 http
   .createServer((req, res) => {
-    const [ endpoint, qs ] = req.url.split('?')
-    const date = qs ? new Date(qs.slice(4, qs.length)) : NaN
-    switch (endpoint) {
+    const { pathname, query } = url.parse(req.url, true)
+    const date = query.iso ? new Date(query.iso) : NaN
+    let body = { 'statusMessage': 'Bad request' }
+    let writeHeadArgs = isNaN(date) ? [400, { 'content-type': 'application/json' }] : [200, { 'content-type': 'application/json' }]
+    switch (pathname) {
       case '/api/unixtime': {
-        if (isNaN(date) === false) {
-          sendJSON({
-            'unixtime': date.getTime()
-          }, res)
-        } else { sendBadRequest(res) }
+        if (!isNaN(date)) { body = Object.assign({}, { 'unixtime': date.getTime() }) }
         break
       }
       case '/api/parsetime': {
-        if (isNaN(date) === false) {
-          sendJSON({
+        if (!isNaN(date)) {
+          body = Object.assign({}, {
             'hour': date.getHours(),
             'minute': date.getMinutes(),
             'second': date.getSeconds()
-          }, res)
-        } else { sendBadRequest(res) }
+          })
+        }
         break
       }
       default: {
-        res.writeHead(404, { 'content-type': 'text/plain' })
-        res.end('Not found')
+        writeHeadArgs = [404, { 'content-type': 'application/json' }]
+        body = Object.assign({}, { 'statusMessage': 'Not found' })
         break
       }
     }
+    res.writeHead(...writeHeadArgs)
+    res.end(JSON.stringify(body))
   })
   .listen(process.argv[2])
