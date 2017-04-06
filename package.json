@@ -1,21 +1,20 @@
 {
-  "name": "corso-node",
+  "name": "gdgre-nodejs-workshop",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "start": "node ./scripts/mdToHTML.js"
-  },
+  "main": "./scripts/mdToHTML.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vforvalerio87/learnyounode.git"
+    "url": "git+https://github.com/vforvalerio87/gdgre-nodejs-workshop.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vforvalerio87/learnyounode/issues"
+    "url": "https://github.com/vforvalerio87/gdgre-nodejs-workshop/issues"
   },
-  "homepage": "https://github.com/vforvalerio87/learnyounode#readme",
+  "homepage": "https://github.com/vforvalerio87/gdgre-nodejs-workshop#readme",
   "dependencies": {
-    "markdown": "^0.5.0"
+    "showdown": "^1.6.4"
   }
 }
