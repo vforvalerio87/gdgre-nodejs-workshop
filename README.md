@@ -55,4 +55,4 @@ Soluzione facile e veloce:
 1. <sup id="fn1">^ [a](#ref1) [b](#ref3)</sup> <cite>["Ryan Dahl: Original Node.js presentation"](https://www.youtube.com/watch?v=ztspvPYybIY)
 2. <sup id="fn2">[^](#ref2)</sup> <cite>["Stack Overflow Developer Survey Results 2016: Most Popular Technologies per Dev Type"](http://stackoverflow.com/insights/survey/2016#most-popular-technologies-per-occupation)
 3. <sup id="fn3">[^](#ref4)</sup> <cite>["pm2: Init systems supported"](http://pm2.keymetrics.io/docs/usage/startup/#init-systems-supported)
-4. <sup if="fn4">[^](#ref5)</sup> <cite>["Using nginx as a reverse proxy in front of your Node.js application"](http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/)
+4. <sup id="fn4">[^](#ref5)</sup> <cite>["Using nginx as a reverse proxy in front of your Node.js application"](http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/)
