@@ -5,8 +5,7 @@ const Transform = require('stream').Transform
 
 const toUppercaseStringStream = new Transform({
   transform(chunk, _, callback) {
-    this.push(chunk.toString().toUpperCase())
-    callback()
+    callback(null, chunk.toString().toUpperCase())
   }
 })
 
