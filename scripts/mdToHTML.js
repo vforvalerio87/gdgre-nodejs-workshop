@@ -15,8 +15,7 @@ const writeStream = fs.createWriteStream(path.resolve(
 )
 const toHTMLStream = new Transform({
   transform(chunk, _, callback) {
-    this.push(markdown.toHTML(chunk.toString()))
-    callback()
+    callback(null, markdown.toHTML(chunk.toString()))
   }
 })
 
