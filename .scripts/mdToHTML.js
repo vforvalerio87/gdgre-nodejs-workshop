@@ -29,6 +29,9 @@ const header = [
   '<!DOCTYPE html>',
   '<html>',
   '<head>',
+  '<style>',
+  '.active { background:aliceblue; }',
+  '</style>',
   '<meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
   '<title>Node.js Workshop - GDG Reggio Emilia</title>',
@@ -37,6 +40,11 @@ const header = [
 ].join('\n')
 
 const footer = [
+  '<script>',
+  '\'use strict;\'',
+  'var toggleActive = function() { document.querySelectorAll(".active").forEach(element => { element.classList.remove("active"); }); document.getElementById(location.hash.slice(1)).classList.add("active") }',
+  'window.onhashchange = toggleActive',
+  '</script>',
   '</body>',
   '</html>'
 ].join('\n')
