@@ -2,7 +2,7 @@
   "name": "gdgre-nodejs-workshop",
   "version": "1.0.0",
   "description": "",
-  "main": "./scripts/mdToHTML.js",
+  "main": "./.scripts/mdToHTML.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vforvalerio87/gdgre-nodejs-workshop.git"
