@@ -58,7 +58,7 @@ pm2 si interfaccia con il sistema di init nativo del proprio sistema operativo<s
 * * *
 
 ## References ##
-1. <sup>^ [a](#ref10) [b](#ref20)</sup> <cite id="fn10">["Ryan Dahl: Original Node.js presentation"](https://www.youtube.com/watch?v=ztspvPYybIY)</cite>
-2. <sup>[^](#ref11)</sup> <cite id="fn20">["Stack Overflow Developer Survey Results 2016: Most Popular Technologies per Dev Type"](http://stackoverflow.com/insights/survey/2016#most-popular-technologies-per-occupation)</cite>
-3. <sup>[^](#ref40)</sup> <cite id="fn40">["pm2: Init systems supported"](http://pm2.keymetrics.io/docs/usage/startup/#init-systems-supported)</cite>
-4. <sup>[^](#ref41)</sup> <cite id="fn41">["Using nginx as a reverse proxy in front of your Node.js application"](http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/)</cite>
+1. <sup>^ [a](#ref10) [b](#ref20)</sup> <cite><a id="fn10" href="https://www.youtube.com/watch?v=ztspvPYybIY">"Ryan Dahl: Original Node.js presentation"</a></cite>
+2. <sup>[^](#ref11)</sup> <cite><a id="fn20" href="http://stackoverflow.com/insights/survey/2016#most-popular-technologies-per-occupation">"Stack Overflow Developer Survey Results 2016: Most Popular Technologies per Dev Type"</a></cite>
+3. <sup>[^](#ref40)</sup> <cite><a id="fn40" href="http://pm2.keymetrics.io/docs/usage/startup/#init-systems-supported">"pm2: Init systems supported"</a></cite>
+4. <sup>[^](#ref41)</sup> <cite><a id="fn41" href="http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/">"Using nginx as a reverse proxy in front of your Node.js application"</a></cite>
