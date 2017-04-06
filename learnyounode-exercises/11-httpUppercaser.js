@@ -4,7 +4,6 @@ const http = require('http')
 const Transform = require('stream').Transform
 
 const toUppercaseStringStream = new Transform({
-  writableObjectMode: true,
   transform(chunk, _, callback) {
     this.push(chunk.toString().toUpperCase())
     callback()
