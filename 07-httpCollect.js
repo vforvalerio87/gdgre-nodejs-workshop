@@ -1,6 +1,8 @@
 'use strict'
 
-require('http').get(process.argv[2], response => {
+const http = require('http')
+
+http.get(process.argv[2], response => {
   let body = ''
   response.on('data', data => { body += data })
   response.on('end', () => {

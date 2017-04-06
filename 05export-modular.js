@@ -1,10 +1,13 @@
 'use strict'
 
+const fs = require('fs')
+const path = require('path')
+
 module.exports = (dirname, extension, callback) => {
-  require('fs').readdir(dirname, 'utf8', (err, files) => {
+  fs.readdir(dirname, 'utf8', (err, files) => {
     if (err) callback(err)
     else callback(null, files.filter(file =>
-      require('path').extname(file).slice(1, file.length) === extension
+      path.extname(file).slice(1, file.length) === extension
     ))
   })
 }
