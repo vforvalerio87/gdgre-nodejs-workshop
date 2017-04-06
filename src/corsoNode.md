@@ -2,6 +2,6 @@
 
 ## Scaletta argomenti ##
 
-* Argomento 1
+* Perché una lezione su Node.js
 * Argomento 2
 * Argomento 3
