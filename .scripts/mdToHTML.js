@@ -40,8 +40,12 @@ const header = [
 const footer = [
   '<script>',
   '\'use strict;\'',
-  'var toggleActive = function() { document.querySelectorAll(".active").forEach(element => { element.classList.remove("active"); }); document.getElementById(location.hash.slice(1)).classList.add("active") }',
-  'window.onhashchange = toggleActive',
+  'var toggleActive = function() {',
+  'var active = document.querySelector(".active"); if (active) { active.classList.remove("active"); }',
+  'var hash = location.hash; if (hash !== "") { document.getElementById(location.hash.slice(1)).classList.add("active"); }',
+  '};',
+  'window.onload = toggleActive;',
+  'window.onhashchange = toggleActive;',
   '</script>',
   '</body>',
   '</html>'
