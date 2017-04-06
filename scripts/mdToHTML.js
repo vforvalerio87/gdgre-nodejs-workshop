@@ -15,7 +15,7 @@ const sourceFile = path.resolve(appDirectory, 'README.md')
 
 const sourceStream = fs.createReadStream(sourceFile)
 const destStream = fs.createWriteStream(path.resolve(
-  appDirectory, 'corsoNode.html')
+  appDirectory, 'README.html')
 )
 const toHTML = new Transform({
   transform(chunk, _, callback) {
