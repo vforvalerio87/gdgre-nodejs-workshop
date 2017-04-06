@@ -1,0 +1,21 @@
+{
+  "name": "corso-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./scripts/mdToHTML.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vforvalerio87/learnyounode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vforvalerio87/learnyounode/issues"
+  },
+  "homepage": "https://github.com/vforvalerio87/learnyounode#readme",
+  "dependencies": {
+    "markdown": "^0.5.0"
+  }
+}
