@@ -11,7 +11,7 @@ const converter = new showdown.Converter({
   'noHeaderId': true
 })
 
-const sourceFile = path.resolve(appDirectory, 'src', 'corsoNode.md')
+const sourceFile = path.resolve(appDirectory, 'README.md')
 
 const sourceStream = fs.createReadStream(sourceFile)
 const destStream = fs.createWriteStream(path.resolve(
