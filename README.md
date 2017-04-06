@@ -17,7 +17,7 @@ Sia Node.js che JavaScript sono attualmente estremamente popolari.
 
 Popolarità di JavaScript e Node.js:
 * La repository di packages di npm, il package manager di Node.js, è la più grande repository di codice open source del mondo
-* Percentuale di utilizzo di JavaScript per tipologia di developer:<sup id="ref2">[[2]](#fn2)></sup>
+* Percentuale di utilizzo di JavaScript per tipologia di developer:<sup id="ref2">[[2]](#fn2)</sup>
     * Back-End: 54,5%
     * Front-End: 90,5%
     * Full-Stack: 85,3%
