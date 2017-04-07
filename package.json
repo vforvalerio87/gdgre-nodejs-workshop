@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/vforvalerio87/gdgre-nodejs-workshop#readme",
   "dependencies": {
+    "chokidar": "^1.6.1",
     "showdown": "^1.6.4"
   }
 }

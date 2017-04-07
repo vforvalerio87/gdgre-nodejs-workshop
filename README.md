@@ -10,7 +10,7 @@
 
 1. Perché una lezione su Node.js
 2. Perché nasce Node.js e che problema risolve
-3. ...
+3. Prova 3
 4. Servire un'applicazione Node.js
 
 ### 1. Perché una lezione su Node.js ###

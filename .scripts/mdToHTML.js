@@ -2,8 +2,10 @@
 
 const fs = require('fs')
 const path = require('path')
-const Transform = require('stream').Transform
+const http = require('http')
+
 const showdown = require('showdown')
+const chokidar = require('chokidar')
 
 const appDirectory = fs.realpathSync(process.cwd())
 
@@ -12,18 +14,7 @@ const converter = new showdown.Converter({
 })
 
 const sourceFile = path.resolve(appDirectory, 'README.md')
-
-const sourceStream = fs.createReadStream(sourceFile)
-const destStream = fs.createWriteStream(path.resolve(
-  appDirectory, 'README.html')
-)
-const toHTML = new Transform({
-  transform(chunk, _, callback) {
-    const mdString = chunk.toString('utf8')
-    const html = converter.makeHtml(mdString)
-    callback(null, html)
-  }
-})
+const destFile = path.resolve(appDirectory, 'README.html')
 
 const header = [
   '<!DOCTYPE html>',
@@ -55,14 +46,19 @@ const footer = [
   '</html>'
 ].join('\n')
 
-destStream.write(
-  `${header}\n`,
-  () => {
-    sourceStream
-      .pipe(toHTML)
-      .pipe(destStream, {end: false})
-    sourceStream.on('end', () => {
-      destStream.end(`\n${footer}`)
-    })
-  }
-)
+const watcher = chokidar.watch(sourceFile)
+
+watcher.on('change', () => {
+  const htmlContent = header + '\n' + converter.makeHtml(fs.readFileSync(sourceFile, 'utf8')) + '\n' + footer
+  fs.writeFileSync(destFile, htmlContent)
+})
+
+http
+  .createServer((req, res) => {
+    res.writeHead(200, { 'content-type': 'text/html' })
+    fs.createReadStream(destFile)
+      .pipe(res)
+  })
+  .listen(process.argv[2] || 3000, () => {
+    console.log('Listening on', process.argv[2] || 3000)
+  })
