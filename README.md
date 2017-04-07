@@ -3,19 +3,19 @@
 
 * * *
 
-### Scaletta ###
+### <span id="toc">Scaletta</span> ###
 
 * Ora 1: Talk e preparazione ([installazione Node.js](https://nodejs.org/))
 * Ora 2: Esercizi [learnyounode](https://nodeschool.io/#get-going)
 
-1. <a href="#chap1" id="toc1">Perché una lezione su Node.js</a>
-2. <a href="#chap2" id="toc2">Perché nasce Node.js e che problema risolve</a>
-3. <a href="#chap3" id="toc3">Node.js e JavaScript: vantaggi e peculiarità</a>
-4. <a href="#chap4" id="toc4">Servire un'applicazione Node.js</a>
-5. <a href="#chap5" id="toc5">JavaScript oggi</a>
-6. <a href="#chap6" id="toc6">JavaScript in Soluzioni Futura</a>
+1. <a href="#chap1">Perché una lezione su Node.js</a>
+2. <a href="#chap2">Perché nasce Node.js e che problema risolve</a>
+3. <a href="#chap3">Node.js e JavaScript: vantaggi e peculiarità</a>
+4. <a href="#chap4">Servire un'applicazione Node.js</a>
+5. <a href="#chap5">JavaScript oggi</a>
+6. <a href="#chap6">JavaScript in Soluzioni Futura</a>
 
-### 1. Perché una lezione su Node.js <a href="#toc1" id="chap1">^</a>###
+### 1. Perché una lezione su Node.js <a href="#toc" id="chap1">^</a>###
 Node.js è una runtime estremamente popolare per scrivere software lato server. Nasce nel 2009.<sup id="ref10">[[1]](#fn10)</sup>  
 Node.js è basato su JavaScript.  
 Sia Node.js che JavaScript sono attualmente estremamente popolari.
@@ -30,13 +30,13 @@ Popolarità di JavaScript e Node.js:
     * Mobile: 28,9%
     * Math & Data: 28,6% 
 
-### 2. Perché nasce Node.js e che problema risolve <a href="#toc2" id="chap2">^</a>###
+### 2. Perché nasce Node.js e che problema risolve <a href="#toc" id="chap2">^</a>###
 Nei sistemi utilizzati tradizionalmente per le applicazioni web la concurrency è basata su thread;  
 per la massima parte del tempo, un thread è in attesa di I/O.  
 
 Come Node.js risolve il problema: modello "non-blocking" basato su I/O asincrono con thread singolo e event loop.<sup id="ref20">[[1]](#fn10)</sup>  
 
-### 3. Node.js e JavaScript: vantaggi e peculiarità <a href="#toc3" id="chap3">^</a>###
+### 3. Node.js e JavaScript: vantaggi e peculiarità <a href="#toc" id="chap3">^</a>###
 * Alte prestazioni, in particolare per il web in cui il computing è scarso, le connessioni concorrenti sono tante e l'I/O è frequente e con lunghi tempi d'attesa
 * Unico linguaggio per tutto lo stack;  
 al cambio di linguaggio è associato un drop di produttività (context-switching penalty)
@@ -52,7 +52,7 @@ poiché Node.js utilizza JavaScript consente di renderizzare HTML sul server con
     * IoT
     * Cloud PaaS, Function/Code as a Service (es: AWS Lambda, Google Cloud Functions)
 
-### 4. Servire un'applicazione Node.js <a href="#toc4" id="chap4">^</a>###
+### 4. Servire un'applicazione Node.js <a href="#toc" id="chap4">^</a>###
 La tipica applicazione web Node.js è un processo che implementa il protocollo HTTP ed è in grado di accettare richieste e inviare risposte.
 Le porte tipicamente utilizzate per applicazioni HTTP pubbliche sono la 80 per l'HTTP e la 443 per l'HTTPS.
 Runtime tradizionali come PHP che comunicano con un web server tramite protocollo CGI o sue varianti lasciano l'implementazione del protocollo HTTP al web server (es: Apache o NGINX).
@@ -67,9 +67,9 @@ Soluzione facile, veloce e production-ready:
 pm2 si interfaccia con il sistema di init nativo del proprio sistema operativo<sup id="ref40">[[3]](#fn40)</sup>
 4. Configurare NGINX come reverse proxy per dirigere le richieste verso le applicazioni Node.js<sup id="ref41">[[4]](#fn41)</sup>
 
-### 5. JavaScript oggi <a href="#toc5" id="chap5">^</a>###
+### 5. JavaScript oggi <a href="#toc" id="chap5">^</a>###
 
-### 6. JavaScript in Soluzioni Futura <a href="#toc6" id="chap6">^</a>###
+### 6. JavaScript in Soluzioni Futura <a href="#toc" id="chap6">^</a>###
 Alcuni esempi di come utilizziamo JavaScript in Soluzioni Futura:
 * Sviluppo di framework per API
 * Applicazioni per browser e server
