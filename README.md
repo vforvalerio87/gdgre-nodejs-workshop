@@ -1,6 +1,8 @@
 # GDG Reggio Emilia - Node.js Workshop #
 ## by [Soluzioni Futura](https://www.soluzionifutura.it/) ##
 
+### https://github.com/vforvalerio87/gdgre-nodejs-workshop
+
 * * *
 
 ### <a href="#" id="toc">Scaletta</a> 
