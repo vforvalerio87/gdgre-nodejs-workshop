@@ -101,6 +101,11 @@ L'esplosione della popolarità del JavaScript fa sì che un numero sempre cresce
     * Generators, Iterators
     * ...
 
+Sempre più sviluppatori e tech companies (Facebook, Google, Microsoft, ...) partecipano allo sviluppo del linguaggio;  
+contribuiscono agli effort di standardizzazione, allo sviluppo di framework, pattern, tool, librerie, propongono features.
+
+Lo standard corrente è ES2016.<sup><a id="ref62" href="#fn62">[7]</a><a id="ref63" href="#fn63">[8]</a></sup>
+
 ### 7. JavaScript in Soluzioni Futura <a href="#toc" id="chap7">^</a>
 Alcuni esempi di come utilizziamo JavaScript in Soluzioni Futura:
 * Sviluppo di framework per API
@@ -130,3 +135,5 @@ Alcuni esempi di come utilizziamo JavaScript in Soluzioni Futura:
 4. <sup>[^](#ref51)</sup> <cite><a id="fn51" href="http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/">"Using nginx as a reverse proxy in front of your Node.js application"</a></cite>
 5. <sup>[^](#ref60)</sup> <cite><a id="fn60" href="http://www.alexhopmann.com/xmlhttp.htm">"The story of XMLHTTP by Alex Hopmann"</a></cite>
 6. <sup>[^](#ref61)</sup> <cite><a id="fn61" href="http://2ality.com/2015/10/es6-influences.html">"Influences on ECMAScript 6"</a></cite>
+7. <sup>[^](#ref62)</sup> <cite><a id="fn62" href="https://www.ecma-international.org/ecma-262/7.0/">"ECMAScript® 2016 Language Specification: ECMA-2627<sup>th</sup> Edition / June 2016"</a></cite>
+8. <sup>[^](#ref63)</sup> <cite><a id="fn63" href="http://node.green/">"Node.js ES2015 Support"</a></cite>
