@@ -15,7 +15,7 @@
 5. <a href="#chap5">JavaScript oggi</a>
 6. <a href="#chap6">JavaScript in Soluzioni Futura</a>
 
-### 1. Perché una lezione su Node.js <a href="#toc" id="chap1">^</a>###
+### 1. Perché una lezione su Node.js <a href="#toc" id="chap1">^</a>
 Node.js è una runtime estremamente popolare per scrivere software lato server. Nasce nel 2009.<sup id="ref10">[[1]](#fn10)</sup>  
 Node.js è basato su JavaScript.  
 Sia Node.js che JavaScript sono attualmente estremamente popolari.
