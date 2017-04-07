@@ -24,6 +24,8 @@ const header = [
   '.active { background:turquoise; }',
   'body { font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif; line-height: 1.4; }',
   'a { text-decoration: none; }',
+  'blockquote p { font-style: italic; }',
+  'blockquote p:before, blockquote p:after { content: \'"\'; }',
   '</style>',
   '<meta charset="utf-8">',
   '<meta name="viewport" content="width=device-width, initial-scale=1.0">',
