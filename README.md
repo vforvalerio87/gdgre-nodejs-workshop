@@ -55,6 +55,14 @@ poiché Node.js utilizza JavaScript consente di renderizzare HTML sul server con
     * Cloud PaaS, Function/Code as a Service (es: AWS Lambda, Google Cloud Functions)
 
 ### 4. Node.js: casi d'uso <a href="#toc" id="chap4">^</a>
+* JSON API (REST API? RESTful Web Services?)
+* Soft real-time
+* Mongo
+* JWT
+* Web socket
+* Streaming
+* Universal JavaScript
+* ...
 
 ### 5. Servire un'applicazione Node.js <a href="#toc" id="chap5">^</a>
 La tipica applicazione web Node.js è un processo che implementa il protocollo HTTP ed è in grado di accettare richieste e inviare risposte.
